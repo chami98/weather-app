@@ -68,11 +68,17 @@ function App() {
 
       <div className="weather-container">
         <div className="top-part">
-          <h1>{((placeInfo.farenheit?.current -32) *(5/9)).toFixed(1)}° C </h1>
+          {/* <h1>{((placeInfo.farenheit?.current -32) *(5/9)).toFixed(1)}° C </h1>
           <div className="condition-high-low">
             <h1>{placeInfo.condition}</h1>
             <h1>{((placeInfo.farenheit?.high-32) *(5/9)).toFixed(1)}° C</h1>
-            <h1>{((placeInfo.farenheit?.low-32) *(5/9)).toFixed(1)}° C</h1>
+            <h1>{((placeInfo.farenheit?.low-32) *(5/9)).toFixed(1)}° C</h1> */}
+
+            <h1>{placeInfo.farenheit?.current}° F </h1>
+          <div className="condition-high-low">
+            <h1>{placeInfo.condition}</h1>
+            <h1>{placeInfo.farenheit?.high}° F</h1>
+            <h1>{placeInfo.farenheit?.low}° F</h1>
           </div>
         </div>
         <h2>
