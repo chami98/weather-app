@@ -1,5 +1,10 @@
 import { useState } from "react";
 import "./App.css";
+import clear from "./assets/clear.jpg";
+import cloudy from "./assets/cloudy.jpg";
+import overcast from "./assets/overcast.jpg";
+import rainy from "./assets/rainy.jpg";
+import snow from "./assets/snow.jpg";
 
 function App() {
   const [place, setplace] = useState("Colombo");
@@ -26,7 +31,21 @@ function App() {
   console.log(placeInfo);
 
   return (
-    <div className="App">
+    <div
+      className="app"
+      style={
+        placeInfo.condition?.toLowerCase() === "clear" ||
+        placeInfo.condition?.toLowerCase() === "sunny"
+          ? { backgroundImage: `url(${clear})` }
+          : placeInfo.condition?.toLowerCase().includes("cloudy")
+          ? { backgroundImage: `url(${cloudy})` }
+          : placeInfo.condition?.toLowerCase.includes("rainy")
+          ? { backgroundImage: `url(${rainy})` }
+          : placeInfo.condition?.toLowerCase().includes("snow")
+          ? { backgroundImage: `url(${snow})` }
+          : { backgroundImage: `url(${overcast})` }
+      }
+    >
       <div className="search_input">
         <input
           type="text"
@@ -46,7 +65,10 @@ function App() {
             <h1>{placeInfo.farenheit?.low}</h1>
           </div>
         </div>
-        <h2>{placeInfo.name }{place.country}</h2>
+        <h2>
+          {placeInfo.name}
+          {place.country}
+        </h2>
       </div>
     </div>
   );
