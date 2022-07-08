@@ -1,6 +1,6 @@
 # Simple ReactJS Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is developed with ReactJS and [Weatherapi](https://www.weatherapi.com/).
 
 ## Available Scripts
 
@@ -11,3 +11,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+## Demo [https://reactjs-weather-98.herokuapp.com/](https://reactjs-weather-98.herokuapp.com/)
