@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import clear from "./assets/clear.jpg";
 import cloudy from "./assets/cloudy.jpg";
@@ -9,6 +9,10 @@ import snow from "./assets/snow.jpg";
 function App() {
   const [place, setplace] = useState("Colombo");
   const [placeInfo, setplaceInfo] = useState({});
+
+  useEffect(() => {
+    handleFetch();
+  }, []);
 
   const handleFetch = () => {
     fetch(
