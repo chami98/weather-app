@@ -14,7 +14,7 @@ function App() {
         setplaceInfo({
           name: data.location.name,
           country: data.location.country,
-          farenhiet: {
+          farenheit: {
             current: data.current.temp_f,
             high: data.forecast.forecastday[0].day.maxtemp_f,
             low: data.forecast.forecastday[0].day.mintemp_f,
@@ -23,7 +23,6 @@ function App() {
         })
       );
   };
-
   console.log(placeInfo);
 
   return (
@@ -35,10 +34,20 @@ function App() {
           onChange={(e) => setplace(e.target.value)}
         ></input>
 
-        <button onClick={() => handleFetch()}>Search</button>
+        <button onClick={handleFetch}>Search</button>
       </div>
 
-      <div className="weather-container"></div>
+      <div className="weather-container">
+        <div className="top-part">
+          <h1>{placeInfo.farenheit?.current}</h1>
+          <div className="condition-high-low">
+            <h1>{placeInfo.condition}</h1>
+            <h1>{placeInfo.farenheit?.high}</h1>
+            <h1>{placeInfo.farenheit?.low}</h1>
+          </div>
+        </div>
+        <h2>{placeInfo.name }{place.country}</h2>
+      </div>
     </div>
   );
 }
