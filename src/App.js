@@ -37,6 +37,12 @@ function App() {
   };
   console.log(placeInfo);
 
+  const something = (event) => {
+    if (event.keyCode === 13) {
+      handleFetch();
+    }
+  };
+
   return (
     <div
       className="app"
@@ -58,6 +64,7 @@ function App() {
           type="text"
           value={place}
           onChange={(e) => setplace(e.target.value)}
+          onKeyDown={(e) => something(e)}
         ></input>
         <SearchIcon
           onClick={handleFetch}
