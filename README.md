@@ -17,3 +17,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![Screenshot (68)](https://user-images.githubusercontent.com/68820649/178000250-5aee7379-0d83-478e-a793-e303e74f2b60.png)
 
+### Moscow
+
+![Screenshot (70)](https://user-images.githubusercontent.com/68820649/178000438-76fd34ca-e5c4-4fbf-ab34-e7ccec1b874d.png)
+
+
