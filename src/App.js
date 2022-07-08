@@ -5,6 +5,7 @@ import cloudy from "./assets/cloudy.jpg";
 import overcast from "./assets/overcast.jpg";
 import rainy from "./assets/rainy.jpg";
 import snow from "./assets/snow.jpg";
+import SearchIcon from "@mui/icons-material/Search";
 
 function App() {
   const [place, setplace] = useState("Colombo");
@@ -31,6 +32,8 @@ function App() {
           condition: data.current.condition.text,
         })
       );
+
+      setplace("")
   };
   console.log(placeInfo);
 
@@ -50,23 +53,26 @@ function App() {
           : { backgroundImage: `url(${overcast})` }
       }
     >
-      <div className="search_input">
+      <div className="search-input">
         <input
           type="text"
           value={place}
           onChange={(e) => setplace(e.target.value)}
         ></input>
-
-        <button onClick={handleFetch}>Search</button>
+        <SearchIcon
+          onClick={handleFetch}
+          className="search-button"
+          fontSize="large"
+        />
       </div>
 
       <div className="weather-container">
         <div className="top-part">
-          <h1>{placeInfo.farenheit?.current}</h1>
+          <h1>{((placeInfo.farenheit?.current -32) *(5/9)).toFixed(1)}° C </h1>
           <div className="condition-high-low">
             <h1>{placeInfo.condition}</h1>
-            <h1>{placeInfo.farenheit?.high}</h1>
-            <h1>{placeInfo.farenheit?.low}</h1>
+            <h1>{((placeInfo.farenheit?.high-32) *(5/9)).toFixed(1)}° C</h1>
+            <h1>{((placeInfo.farenheit?.low-32) *(5/9)).toFixed(1)}° C</h1>
           </div>
         </div>
         <h2>

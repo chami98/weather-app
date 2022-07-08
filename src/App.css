@@ -1,4 +1,85 @@
-*{
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  font-family: "Merriweather Sans", sans-serif;
+  color: white;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  right: 200px;
+  top: 600px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1px);
+  overflow: hidden;
+  padding: 3px;
+}
+
+.search-input > input {
+  font-size: 25px;
+  width: 395px;
+  font-size: 40px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+}
+
+.search-input > input::placeholder {
+  color: white;
+}
+
+.search-button {
+  cursor: pointer;
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+.search-button:hover{
+  transform: scale(1.5);
+}
+
+.weather-container > h2{
+position: absolute;
+font-size: 64px;
+left: 75px;
+top: 600px;
+}
+
+.top-part{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  left: 65px;
+  top: 440px;
+}
+
+.top-part >h1{
+  font-size: 135px;
+}
+
+.condition-high-low{
+  margin-left: 20px;
+}
+
+* {
   padding: 0;
+  margin: 0;
 }
