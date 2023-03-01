@@ -20,13 +20,24 @@ Welcome to the Weather Application! This is a React-based web application that d
 To install the Weather Application, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Install the necessary dependencies by running `npm install`.
+2. Install the necessary dependencies by running 
+```
+npm install
+```
 3. Create a free account on [WeatherAPI](https://www.weatherapi.com/) to obtain an API key.
 4. In the `.env` file, replace `[YOUR_API_KEY]` with your actual API key.
 
 ## 🚀 Usage
 
-To use the Weather Application, run `npm start` to start the development server, and navigate to `http://localhost:3000/` in your web browser. 
+To use the Weather Application, run 
+```
+npm start
+``` 
+to start the development server, and navigate to 
+```
+http://localhost:3000/
+``` 
+in your web browser. 
 
 Enter a location in the search bar and hit enter to retrieve weather information for that location.
 
