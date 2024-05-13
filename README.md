@@ -1,6 +1,6 @@
 # 🌤️ Weather Application
 
-Welcome to the Weather Application! This is a React-based web application that displays current weather conditions for a given location, powered by WeatherAPI.
+Welcome to the Weather Application This is a React-based web application that displays current weather conditions for a given location, powered by WeatherAPI.
 
 ## 📜 Table of Contents
 
