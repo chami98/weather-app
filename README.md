@@ -55,8 +55,6 @@ Contributions are always welcome! If you would like to contribute to the Weather
 
 Thank you for checking out the Weather Application! If you have any questions or feedback, please feel free to reach out. Happy coding! 🎉
 
-### Colombo
-
 ![Screenshot (68)](https://user-images.githubusercontent.com/68820649/178000250-5aee7379-0d83-478e-a793-e303e74f2b60.png)
 
 ### Moscow
