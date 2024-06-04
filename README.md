@@ -41,7 +41,7 @@ in your web browser.
 
 Enter a location in the search bar and hit enter to retrieve weather information for that location.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are always welcome! If you would like to contribute to the Weather Application, please follow these steps:
 
