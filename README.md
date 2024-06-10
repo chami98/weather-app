@@ -27,7 +27,7 @@ npm install
 3. Create a free account on [WeatherAPI](https://www.weatherapi.com/) to obtain an API key.
 4. In the `.env` file, replace `[YOUR_API_KEY]` with your actual API key.
 
-## 🚀 Usage
+## Usage
 
 To use the Weather Application, run 
 ```
