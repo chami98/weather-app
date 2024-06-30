@@ -10,7 +10,7 @@ Welcome to the Weather Application This is a React-based web application that di
 - [Contributing](#contributing)
 
 
-## 🌡️ Features
+##  Features
 
 - Displays current weather conditions (temperature 🌡️, and weather description) for a given location 
 - Allows users to search 🔍 for weather information for any location in the world
